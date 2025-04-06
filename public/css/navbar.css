@@ -1,0 +1,145 @@
+.premium-navbar {
+    background: #fd005407;
+    border-bottom: 2px solid #ffd900a9;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1);
+}
+
+.logo-area img {
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.logo-area:hover img {
+    transform: scale(1.05);
+}
+
+.nav-link-custom {
+    font-weight: 600;
+    color: #000000 !important;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link-custom:hover {
+    color: #fff !important;
+    transform: translateY(-2px);
+}
+
+.search-form input {
+    min-width: 400px;
+    background: #1c1c1c;
+    border: 1px solid #ffffff;
+    color: #ffd700;
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.search-form input::placeholder {
+    color: #cccccc;
+}
+
+.search-form input:focus {
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.nav-icon {
+    font-size: 1.3rem;
+    color: #000000;
+    transition: all 0.2s ease;
+}
+
+.nav-icon:hover {
+    color: #ff1616;
+    transform: scale(1.1);
+}
+
+.cart-label {
+    margin-left: 5px;
+    font-size: 0.9rem;
+}
+
+.custom-dropdown {
+    background-color: #1c1c1c;
+    color: #ffd700;
+    border: 1px solid #ffd700;
+}
+
+.custom-dropdown .dropdown-item {
+    color: #ffd700;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .premium-navbar {
+        padding: 10px 15px;
+        height: 40vh;
+    }
+  
+    .logo-area img {
+        height: 100px; /* Smaller logo on mobile */
+        width: 200px;
+        position: absolute;
+        top: 2%;
+        left: 25%;
+    }
+  
+    .nav-link-custom {
+        font-size: 0.9rem;
+        /* margin-top: 5px; Slightly smaller font size for mobile */
+        position: absolute;
+        margin-top: -10px;
+    }
+
+    .search-form input {
+        min-width: 4vh; /* Make the search input responsive */
+        margin-top: 25px;
+        font-size: 0.9rem;
+        padding: 8px;
+        position: absolute;
+
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);   
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 30px;
+    }
+  
+    .cart-label {
+        font-size: 0.8rem;
+        display: block;
+        text-align: center;
+    }
+
+    .nav-icon {
+        font-size: 1.1rem;
+    }
+
+    /* Hide Cart and User menu on very small screens */
+    .cart-label, .nav-item.dropdown {
+        display: none;
+    }
+
+    /* Mobile Navbar adjustments */
+    .navbar-toggler {
+        border-color: #ffd700;
+    }
+  
+    .navbar-collapse {
+        justify-content: flex-start;
+        text-align: center;
+    }
+}
